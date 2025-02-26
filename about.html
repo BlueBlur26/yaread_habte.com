@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Yaread</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="portfolio.html">Portfolio</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="images/profile-picture.png" alt="Yaread Logo">
+            </div>
+            <div class="content">
+                <h1 class="intro-text">About <span> me</span></h1>
+                <p>My name is Yaread Habte. I hold a background in visual
+                    communication and graphic design, with experience working on
+                    branding, web design, and digital technology. I have skills in using
+                    Adobe Photoshop, Illustrator, and InDesign.</p>
+
+                <p>I possess the following skills:</p>
+                <ul>
+                    <li>Usage of typography, colour, and imagery</li>
+                    <li>Proficiency in Adobe Photoshop, Illustrator, and InDesign</li>
+                    <li>Experience with wireframing tools such as Figma & Adobe XD</li>
+                    <li>Brainstorming design concepts and presenting these ideas to my peers</li>
+                </ul>
+
+                <!-- Social Media Icons -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yaread-habte-431664163" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/yareadhabte" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://youtube.com/@blueblur_2680?si=-03tpCZzJTmL7HLw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/blueblur_26/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>      
+
+                <!-- Button Below Social Icons -->
+                <div class="btn">
+                    <a href="contact.html" class="button">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
+    </footer>
+
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector(".mobile-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

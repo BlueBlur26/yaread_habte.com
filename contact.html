@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Yaread</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="portfolio.html">Portfolio</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="main-container">
+            <!-- Y Logo -->
+            <div class="image">
+                <img src="images/logo icon.png" alt="Yaread Logo">
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h1 class="intro-text">Get in <span> touch!</span></h1>
+                <p>Intersted in creating new and unique ideas? Let's connect!</p>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Phone" required>
+                    
+                    <select name="interest">
+                        <option value="" disabled selected>Select an Interest</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="web-design">Web Design</option>
+                        <option value="branding">Branding</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <textarea name="message" placeholder="Message"></textarea>
+
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
+    </footer>
+
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector(".mobile-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

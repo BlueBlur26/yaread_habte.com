@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Yaread</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="portfolio.html">Portfolio</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+            <!-- Hamburger Icon -->
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="images/logo icon.png">
+            </div>
+            <div class="content">
+                <h1 class="intro-text">My <span> Portfolio</span></h1>
+                <p>Welcome to my portfolio! Here, you'll find a collection of my design projects, showcasing my skills in branding and digital illustration. Each project represents my passion for creativity, problem-solving, and visual storytelling.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yaread-habte-431664163" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/yareadhabte" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://youtube.com/@blueblur_2680?si=-03tpCZzJTmL7HLw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/blueblur_26/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="contact.html" class="button">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h1>My Projects</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/DashCam Album Cover.jpg" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="images/Society Hill Album Cover.jpg" alt="Gallery Image 2"></div>
+            <div class="gallery-item"><img src="images/Nova Game.jpg" alt="Gallery Image 3"></div>
+            <div class="gallery-item"><img src="images/Inkscape Creations_Poster.jpg" alt="Gallery Image 4"></div>
+            <div class="gallery-item"><img src="images/Sega Infographic Chart.jpg" alt="Gallery Image 5"></div>
+            <div class="gallery-item"><img src="images/Nintendo Power Magazine.jpg" alt="Gallery Image 6"></div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
+    </footer>
+    
+    
+
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
