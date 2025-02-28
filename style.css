@@ -53,6 +53,11 @@ nav{
     align-items: center;
 }
 
+.hamburg {
+    display: none; /* Hide by default */
+}
+    
+
 .logo{
     color: rgb(255, 255, 255);
     font-size: 2rem;
