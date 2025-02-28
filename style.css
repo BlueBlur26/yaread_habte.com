@@ -666,6 +666,7 @@ footer {
         position: relative;
         margin-left: auto; /* ✅ Pushes menu right */
         padding-right: 80px; /* ✅ Adjusts spacing */
+        display: block; /* Show only on mobile */
     }
 
     .main-container{
