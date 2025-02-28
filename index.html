@@ -19,55 +19,63 @@
                 <div class="link"><a href="portfolio.html">Portfolio</a></div>
                 <div class="link"><a href="contact.html">Contact</a></div>
             </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
         </div>
-        <i class="fa-solid fa-bars hamburg"></i>
     </nav>
-        <div class="dropdown">
-            <div class="links">
-                <a href="Home"></a>
-                <a href="About"></a>
-                <a href="Portfolio"></a>
-                <a href="Contact"></a>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="fade-in-section">
+        <div class="main-container">
+            <div class="image">
+                <img src="images/logo icon.png" alt="Yaread Logo">
+            </div>
+            <div class="content">
+                <h1 class="intro-text">Hello! <span> I'm Yaread!</span></h1>
+                <div class="typewriter">I am a <span></span></div>
+                <p>Hello! I’m Yaread, a passionate graphic designer with a strong background in visual communication, branding, and digital design. I specialize in creating engaging visuals that bring ideas to life through typography, color, and imagery. From branding and web design to illustration and layout, I love exploring creative solutions that leave a lasting impact. Whether it’s designing for print, digital media, or interactive platforms, I strive to craft designs that are both visually appealing and strategically effective. Let’s create something amazing together!</p>
+    
+                <!-- Social Media Icons -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yaread-habte-431664163" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/yareadhabte" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://youtube.com/@blueblur_2680?si=-03tpCZzJTmL7HLw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/blueblur_26/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>      
+    
+                <!-- Button Below Social Icons -->
+                <div class="btn">
+                    <a href="contact.html" class="button">Let's Connect</a>
+                </div>
             </div>
         </div>
-        <section>
-            <div class="main-container">
-                <div class="image">
-                    <img src="images/logo icon.png" alt="Yaread Logo">
-                </div>
-                <div class="content">
-                    <h1>Hello! <span> My name is Yaread!</span></h1>
-                    <div class="typewriter">I am a <span></span></div>
-                    <p>I hold a background in visual communication and graphic design, with experience working on
-                        branding, web design, and digital technology. I have skills in using
-                        Adobe Photoshop, Illustrator, and InDesign.</p>
-        
-                    <p>I possess the following skills:</p>
-                    <ul>
-                        <li>Proficiency in Adobe Photoshop, Illustrator, and InDesign</li>
-                        <li>Experience with wireframing tools such as Figma & Adobe XD</li>
-                        <li>Brainstorming design concepts and presenting these ideas to my peers</li>
-                    </ul>
-        
-                    <!-- Social Media Icons -->
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/yaread-habte-431664163" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.behance.net/yareadhabte" target="_blank"><i class="fa-brands fa-behance"></i></a>
-                        <a href="https://youtube.com/@blueblur_2680?si=-03tpCZzJTmL7HLw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/blueblur_26/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </div>      
-        
-                    <!-- Button Below Social Icons -->
-                    <div class="btn">
-                        <a href="contact.html" class="button">Let's Connect</a>
-                    </div>
-                </div>
-        </section>
-        <footer>
-            <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
-        </footer>
-  
-     <!-- ✅ JavaScript for Hamburger Menu -->
+    </section>
+    
+    <section class="design-skills">
+        <h2>Design Skills & Tools</h2>
+        <div class="skills-list">
+            <span class="skill">Adobe Photoshop</span>
+            <span class="skill">Adobe Illustrator</span>
+            <span class="skill">Adobe InDesign</span>
+            <span class="skill">Figma</span>
+            <span class="skill">Typography</span>
+            <span class="skill">Branding</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
+    </footer>
+    
+    <!-- ✅ JavaScript for Hamburger Menu -->
     <script>
         function toggleMenu() {
             var menu = document.querySelector(".mobile-menu");
