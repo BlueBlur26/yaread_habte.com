@@ -82,5 +82,22 @@
             var menu = document.querySelector(".mobile-menu");
             menu.classList.toggle("active");
         }
+        <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.querySelector(".dropdown");
+        const toggleButton = document.querySelector(".hamburg");
+
+        toggleButton.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        });
+
+        // Close menu when resizing back to desktop
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 884) { // Desktop breakpoint
+                menu.classList.remove("active");
+            }
+        });
+    });
+</script>
     </script>
 </html>
