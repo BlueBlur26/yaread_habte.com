@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sega Infographic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Yaread</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="portfolio.html">Portfolio</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Header Section -->
+    <header class="project-header">
+        <h1>Sega Infographic</h1>
+    </header>
+
+    <!-- Main Content -->
+    <section class="project-4">
+        <div class="sega-infographic">
+            <img src="images/Sega Infographic Poster.jpg" alt="Sega Infographic">
+        </div>
+    
+        <!-- Move Tools Used Below the Images -->
+        <div class="project-tools">
+            <p><strong>Tool(s) used:</strong> Adobe Illustrator</p>
+        </div>
+    
+        <!-- Centered Project Description -->
+        <div class="project-description">
+            <p>To create my inforgraphic, I did my research on Sega and their
+                consoles. I separated them into three eras. The first being early
+                days explaining their first few consoles, followed by the golden
+                age where their more notable consoles such as the Sega Genesis
+                and Sega CD, and lastly the innovation and decline where the
+                last of Sega’s consoles, notably the Saturn and the Dreamcast
+                were released. The next phase was the sketches and I listed three
+                sketches involving rings or emeralds in different designs. For my
+                final design, I combined the two and added them both in a vertical
+                shaped poster, while adding the emeralds behind the text with a
+                lowered opacity for better reading. The colours I used were pink,
+                blue, green, and yellow. What I learned from this infographic
+                was how to properly structure information visually to tell a clear
+                infographic. While Sega is no longer in the console industry, they continue to release games for current generation
+                consoles and PC.</p>
+        </div>
+    </section>
+
+    <div class="button-container">
+        <a href="inkscape-creations.html" class="nav-button">← Previous</a>
+        <a href="portfolio.html" class="nav-button">Back to Portfolio</a>
+        <a href="nintendo-power-magazine.html" class="nav-button">Next  →</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
+    </footer>
+
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

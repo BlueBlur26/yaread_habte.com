@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Yaread</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="portfolio.html">Portfolio</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Header Section -->
+    <header class="project-header">
+        <h1>Nova Game Brand</h1>
+    </header>
+
+    <!-- Main Content -->
+    <section class="project-2">
+        <div class="novagame">
+            <img src="images/Nova Game.jpg" alt="Nova Game">
+            <img src="images/Nova Game Emerald Cave.jpg" alt="Nova Game">
+        </div>
+    
+        <!-- Move Tools Used Below the Images -->
+        <div class="project-tools">
+            <p><strong>Tool(s) used:</strong> Adobe Photoshop</p>
+        </div>
+    
+        <!-- Centered Project Description -->
+        <div class="project-description">
+            <p>For Nova Game, I started off by drawing some sketches on what
+                Nova Game would look like. So I implemented different icons
+                such as a ball or a controller to the logo. After some thinking and
+                consideration, I made a star and moon and added it to the logo.
+                For typography, I used a regular font for Nova and used a pixel font
+                for Game. In Branding 2, I decided to give it a rework on the logo
+                and completely changed it. I used Adobe Photoshop to update the
+                logo and I added a controller to the bottom of the logo. I made one
+                side of the logo feature day and the other side night - showcasing
+                that with Nova Game you can play games during the day or night.
+                What I learned from this project is how to develop and evolve a
+                brand concept from initial sketches to a fully realized identity. This
+                experience taught me the importance of iteration and how visual
+                elements, like logos and campaigns, can convey a brand’s story.</p>
+        </div>
+    </section>
+
+    <div class="button-container">
+        <a href="dashcam-societyhill.html" class="nav-button">← Previous</a>
+        <a href="portfolio.html" class="nav-button">Back to Portfolio</a>
+        <a href="inkscape-creations.html" class="nav-button">Next  →</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
+    </footer>
+
+
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
