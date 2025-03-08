@@ -579,9 +579,9 @@ footer {
 }
 
 .design-skills h2 {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 50px;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .skills-list {
@@ -600,6 +600,7 @@ footer {
     background: #2E6846;
     color: white;
     padding: 10px 20px;
+    border-radius: 20px;
     font-size: 18px;
     font-weight: bold;
     transition: transform 0.3s ease-in-out;
@@ -612,16 +613,16 @@ footer {
 
 .skill:hover {
     transform: scale(1.1);
-    background-color: #000000;
+    background-color: #D0DFD1;
     color: black;
 }
+
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
 
 .project {
     position: relative;
