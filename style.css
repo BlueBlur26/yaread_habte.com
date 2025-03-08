@@ -154,7 +154,6 @@ nav{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Adjust transparency here */
     z-index: 1;
 }
 
@@ -571,6 +570,50 @@ footer {
 .featured-projects h2, .design-skills h2 {
     color: #5a4a8d;
     margin-bottom: 20px;
+}
+
+.design-skills {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+}
+
+.design-skills h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #2E6846;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill img {
+    width: 32px;  /* Adjust icon size */
+    height: 32px;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background-color: #000000;
+    color: black;
 }
 
 .projects-grid {
