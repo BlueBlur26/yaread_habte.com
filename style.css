@@ -447,8 +447,7 @@ ul li {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    background: url('images/Graphic\ Design\ Banner.jpg') repeat-x;
+
     background-size: cover;
     background-position: center;
     animation: scrollBackground 60s linear infinite;
@@ -567,11 +566,6 @@ footer {
     text-align: center;
 }
 
-.featured-projects h2, .design-skills h2 {
-    color: #5a4a8d;
-    margin-bottom: 20px;
-}
-
 .design-skills {
     text-align: center;
     padding: 50px 20px;
@@ -579,9 +573,9 @@ footer {
 }
 
 .design-skills h2 {
-    font-size: 32px;
-    color: #ffffff;
-    margin-bottom: 20px;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 50px;
 }
 
 .skills-list {
@@ -600,7 +594,6 @@ footer {
     background: #2E6846;
     color: white;
     padding: 10px 20px;
-    border-radius: 20px;
     font-size: 18px;
     font-weight: bold;
     transition: transform 0.3s ease-in-out;
@@ -613,16 +606,16 @@ footer {
 
 .skill:hover {
     transform: scale(1.1);
-    background-color: #D0DFD1;
+    background-color: #000000;
     color: black;
 }
-
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 
 .project {
     position: relative;
@@ -856,10 +849,10 @@ footer {
 }
 
 .skill {
-    background: #5a4a8d;
+    background: #065c4e;
     color: white;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 /* Header Styling */
