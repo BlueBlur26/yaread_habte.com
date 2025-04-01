@@ -26,7 +26,6 @@ body{
     animation: fadeIn 1.5s ease-out forwards;
 }
 
-
 nav{
     width: 100%;
     height: 10vh;
@@ -34,25 +33,33 @@ nav{
     background-color: black;
 }
 
-
 .nav-container{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px 20px;
 }
 
-.logo{
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    font-weight: bolder;
+.logo {
+    display: flex;
+    align-items: center; /* Centers logo and text vertically */
 }
 
-.logo span{
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px black;
-    transition: text-shadow 0.3s ease-in-out;
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin-top: 5px; 
+    padding-bottom: 5px; 
+}
+
+.logo-text {
+    font-size: 35px; /* Adjust text size */
+    font-weight: bold;
+    color: white; /* Adjust color if needed */
+    display: inline-block;
 }
 
 
@@ -227,7 +234,7 @@ nav{
     position: absolute;
     width: 2px;
     height: 100%;
-    right: -3px; /* Moves cursor right next to the last letter */
+    right: -3px; 
     animation: cursor 0.6s linear infinite;
 }
 
@@ -235,8 +242,8 @@ nav{
 .profile-picture {
     position: relative;
     display: block;
-    width: 80%; /* Adjust width if necessary */
-    margin: 100px auto 0; /* Moves the image lower */
+    width: 80%; 
+    margin: 100px auto 0; 
     max-width: 200px;
 }
 
@@ -266,21 +273,21 @@ nav{
 }
 
 ul {
-    list-style-type: disc; /* Keeps default bullet points */
-    padding-left: 10px; /* Adjusts indentation to match the paragraph */
-    margin-left: 10px; /* Moves the entire list to the right */
+    list-style-type: disc; 
+    padding-left: 10px; 
+    margin-left: 10px; 
 }
 
 ul li {
-    margin-bottom: 5px; /* Adds space between items */
-    font-size: 1rem; /* Adjusts font size */
+    margin-bottom: 5px; 
+    font-size: 1rem; 
 }
 
 
 .social-links {
     display: flex;
     justify-content: left;
-    gap: 20px; /* Space between buttons */
+    gap: 20px; 
 }
 
 .social-links a {
@@ -1115,6 +1122,13 @@ footer {
         font-size: 14px; /* Slightly reduce font size */
         padding: 10px 20px; /* Adjust padding */
         min-width: unset; /* Allow dynamic width */
+    }
+
+    .logo-img {
+        height: 35px;
+    }
+    .logo-text {
+        font-size: 35px;
     }
 }
 
