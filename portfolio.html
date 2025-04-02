@@ -11,7 +11,8 @@
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <span>Yaread</span>
+                <img src="images/Y logo.png" alt="Yaread Logo">
+                <span class="logo-text">aread</span>
             </div>
             <div class="links">
                 <div class="link"><a href="home.html">Home</a></div>
@@ -19,7 +20,6 @@
                 <div class="link"><a href="portfolio.html">Portfolio</a></div>
                 <div class="link"><a href="contact.html">Contact</a></div>
             </div>
-            <!-- Hamburger Icon -->
             <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
         </div>
     </nav>
@@ -37,7 +37,7 @@
     <section>
         <div class="main-container">
             <div class="image">
-                <img src="images/logo icon.png">
+                <img src="images/portfolio.png">
             </div>
             <div class="content">
                 <h1 class="intro-text">My <span> Portfolio</span></h1>
@@ -55,7 +55,7 @@
         </div>
     </section>
 
-<section class="gallery-section">
+    <section class="gallery-section">
         <h1>My Projects</h1>
         <div class="gallery-grid">
             <div class="gallery-item">
@@ -94,8 +94,6 @@
     <footer>
         <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
     </footer>
-    
-    
 
     <!-- ✅ JavaScript for Hamburger Menu -->
     <script>
@@ -104,6 +102,17 @@
             menu.classList.toggle("active");
         }
     </script>
+
+<script>
+    window.addEventListener('resize', function () {
+  const menu = document.querySelector('.mobile-menu');
+  const hamburger = document.querySelector('.hamburg');
+
+  if (window.innerWidth > 884 && menu.classList.contains('active')) {
+    menu.classList.remove('active');
+  }
+});
+  </script>
 
 </body>
 </html>
