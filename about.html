@@ -11,7 +11,8 @@
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <span>Yaread</span>
+                <img src="images/Y logo.png" alt="Yaread Logo">
+                <span class="logo-text">aread</span>
             </div>
             <div class="links">
                 <div class="link"><a href="home.html">Home</a></div>
@@ -80,5 +81,16 @@
             menu.classList.toggle("active");
         }
     </script>
+
+<script>
+    window.addEventListener('resize', function () {
+  const menu = document.querySelector('.mobile-menu');
+  const hamburger = document.querySelector('.hamburg');
+
+  if (window.innerWidth > 884 && menu.classList.contains('active')) {
+    menu.classList.remove('active');
+  }
+});
+  </script>
 </body>
 </html>
