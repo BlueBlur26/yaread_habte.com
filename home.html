@@ -36,50 +36,34 @@
 
     <section class="fade-in-section">
         <div class="main-container">
-            <div class="image">
-                <img src="images/profile-picture.png" alt="Yaread Logo">
-            </div>
-            <div class="content">
-                <h1 class="intro-text">Hello! <span> I'm Yaread!</span></h1>
-                <div class="typewriter">I am a <span></span></div>
-                <p>Hello! I’m Yaread, a passionate graphic designer with a strong background in visual communication, branding, and digital design. I specialize in creating engaging visuals that bring ideas to life through typography, color, and imagery. From branding and web design to illustration and layout, I love exploring creative solutions that leave a lasting impact. Whether it’s designing for print, digital media, or interactive platforms, I strive to craft designs that are both visually appealing and strategically effective. Let’s create something amazing together!</p>
-    
-                <!-- Social Media Icons -->
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/yaread-habte-431664163" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.behance.net/yareadhabte" target="_blank"><i class="fa-brands fa-behance"></i></a>
-                    <a href="https://youtube.com/@blueblur_2680?si=-03tpCZzJTmL7HLw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/blueblur_26/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>      
-    
-                <!-- Button Below Social Icons -->
-                <div class="btn">
-                    <a href="contact.html" class="button">Let's Connect</a>
-                </div>
-            </div>
+          <div class="image"></div>
+          <div class="content">
+            <h1 class="intro-text">Hello! <span>I'm Yaread!</span></h1>
+            <div class="typewriter">I am a <span></span></div>
+            <p>I specialize in creating engaging visuals that bring ideas to life through typography, colour, and imagery. Let’s create something amazing together!</p>
+            <a href="#skills" class="scroll-down">
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+          </div>
         </div>
-    </section>
+      </section>
     
-    <section class="design-skills">
-        <h2>Design Skills & Tools</h2>
-        <div class="skills-list">
-            <div class="skill">
-                <img src="images/figma.png" alt="Figma Icon">
-                <span>Figma</span>
-            </div>
-            <div class="skill">
-                <img src="images/illustrator.png" alt="Adobe Illustrator Icon">
-                <span>Adobe Illustrator</span>
-            </div>
-            <div class="skill">
-                <img src="images/indesign.png" alt="Adobe InDesign Icon">
-                <span>Adobe InDesign</span>
-            </div>
-            <div class="skill">
-                <img src="images/photoshop.png" alt="Adobe Photoshop Icon">
-                <span>Adobe Photoshop</span>
-            </div>
-    </section>
+      <section id="skills" class="design-skills-grid">
+        <h2 class="skills-heading">Design Skills</h2>
+      
+        <div class="design-box left typography">
+          <h2>Typography & Layout Design</h2>
+        </div>
+        <div class="design-box right branding">
+          <h2>Branding & Visual Identity</h2>
+        </div>
+        <div class="design-box left illustration">
+          <h2>Digital Illustration</h2>
+        </div>
+        <div class="design-box right print">
+          <h2>Print & Publication Design</h2>
+        </div>
+      </section>
 
     <footer>
         <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
@@ -92,5 +76,28 @@
             menu.classList.toggle("active");
         }
     </script>
+
+<script>
+    document.querySelector('.scroll-down').addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector('#skills');
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  </script>
+
+  <script>
+    window.addEventListener('resize', function () {
+  const menu = document.querySelector('.mobile-menu');
+  const hamburger = document.querySelector('.hamburg');
+
+  if (window.innerWidth > 884 && menu.classList.contains('active')) {
+    menu.classList.remove('active');
+  }
+});
+  </script>
+
 </body>
 </html>
