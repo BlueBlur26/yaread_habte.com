@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>InkScape Creations</title>
+    <title>Yaread's Portfolio</title>
 </head>
 <body>
-
     <nav>
         <div class="nav-container">
-            <div class="logo">
+          <a href="index.html" class="logo">
                 <img src="images/Y logo.png" alt="Yaread Logo">
                 <span class="logo-text">aread</span>
-            </div>
+          </a>
             <div class="links">
                 <div class="link"><a href="home.html">Home</a></div>
                 <div class="link"><a href="about.html">About</a></div>
@@ -36,54 +35,36 @@
         </ul>
     </div>
 
-    <!-- Header Section -->
-    <header class="project-header">
-        <h1>InkScape Creations</h1>
-    </header>
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="images/email.png" alt="Yaread Logo">
+            </div>
 
-    <!-- Main Content -->
-<section class="project-3">
-    <div class="inkscape-creations">
-        <div class="business-card">
-            <img src="images/Business Card.png" alt="InkScape Creations Business Card">
-        </div>
-        <div class="poster">
-            <img src="images/Poster.jpg" alt="InkScape Creations Poster">
-        </div>
-        <div class="post-card">
-            <img src="images/Post Card.png" alt="InkScape Creations Post Card">
-        </div>
-    </div>
-    
-        <!-- Move Tools Used Below the Images -->
-        <div class="project-tools">
-            <p><strong>Tool(s) used:</strong> Adobe Illustrator</p>
-        </div>
-    
-        <!-- Centered Project Description -->
-        <div class="project-description">
-            <p>InkScape Creations is a printing brand. I used all my past work
-                from semester 1 to 3 as well as work from Design Foundation.
-                The only challenge I faced here was learning how to create an
-                emerald by scratch as this took some time to do. However, once I
-                watched a YouTube tutorial on how to create one, I was back on
-                track. I finished the poster and then I put my focus on the business
-                card and post card. After printing the materials, I was very satisfied
-                on how they looked. Not only it was high quality but the logo and
-                past work on the poster looked amazing. What I learned from this
-                project is the importance of combining creativity with technical skills
-                to create cohesive branding materials. I learned how to incorporate
-                past work effectively into a new project, showcasing growth and
-                consistency. As a result, I feel more confident in my ability to
-                develop and execute branding concepts from start to finish.</p>
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h1 class="intro-text">Get in <span> touch!</span></h1>
+                <p>Intersted in creating new and unique ideas? Let's connect!</p>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Phone" required>
+                    
+                    <select name="interest">
+                        <option value="" disabled selected>Select an Interest</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="web-design">Web Design</option>
+                        <option value="branding">Branding</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <textarea name="message" placeholder="Message"></textarea>
+
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
-
-    <div class="button-container">
-        <a href="nova-game.html" class="nav-button">← Previous</a>
-        <a href="portfolio.html" class="nav-button">Back to Portfolio</a>
-        <a href="sega-infographic.html" class="nav-button">Next  →</a>
-    </div>
 
     <footer>
         <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
@@ -97,7 +78,7 @@
         }
     </script>
 
-  <script>
+<script>
     window.addEventListener('resize', function () {
   const menu = document.querySelector('.mobile-menu');
   const hamburger = document.querySelector('.hamburg');
@@ -107,6 +88,6 @@
   }
 });
   </script>
-
+  
 </body>
 </html>
