@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Sega Infographic</title>
+    <title>Yaread's Portfolio</title>
 </head>
 <body>
     <nav>
@@ -26,7 +26,7 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobileMenu">
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -35,48 +35,63 @@
         </ul>
     </div>
 
-    <!-- Header Section -->
-    <header class="project-header">
-        <h1>Sega Infographic</h1>
-    </header>
-
-    <!-- Main Content -->
-    <section class="project-4">
-        <div class="sega-infographic">
-            <img src="images/Sega Infographic Poster.jpg" alt="Sega Infographic">
-        </div>
-    
-        <!-- Move Tools Used Below the Images -->
-        <div class="project-tools">
-            <p><strong>Tool(s) used:</strong> Adobe Illustrator</p>
-        </div>
-    
-        <!-- Centered Project Description -->
-        <div class="project-description">
-            <p>To create my inforgraphic, I did my research on Sega and their
-                consoles. I separated them into three eras. The first being early
-                days explaining their first few consoles, followed by the golden
-                age where their more notable consoles such as the Sega Genesis
-                and Sega CD, and lastly the innovation and decline where the
-                last of Sega’s consoles, notably the Saturn and the Dreamcast
-                were released. The next phase was the sketches and I listed three
-                sketches involving rings or emeralds in different designs. For my
-                final design, I combined the two and added them both in a vertical
-                shaped poster, while adding the emeralds behind the text with a
-                lowered opacity for better reading. The colours I used were pink,
-                blue, green, and yellow. What I learned from this infographic
-                was how to properly structure information visually to tell a clear
-                infographic. While Sega is no longer in the console industry, they continue to release games for current generation
-                consoles and PC.</p>
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="images/portfolio.png">
+            </div>
+            <div class="content">
+                <h1 class="intro-text">My <span> Portfolio</span></h1>
+                <p>Welcome to my portfolio! Here, you'll find a collection of my design projects, showcasing my skills in branding and digital illustration. Each project represents my passion for creativity, problem-solving, and visual storytelling.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yaread-habte-431664163" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/yareadhabte" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://youtube.com/@blueblur_2680?si=-03tpCZzJTmL7HLw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/blueblur_26/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="contact.html" class="button">Let's Connect</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <div class="button-container">
-        <a href="inkscape-creations.html" class="nav-button">← Previous</a>
-        <a href="portfolio.html" class="nav-button">Back to Portfolio</a>
-        <a href="nintendo-power-magazine.html" class="nav-button">Next  →</a>
-    </div>
-
+    <section class="gallery-section">
+        <h1>My Projects</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="dashcam-societyhill.html">
+                    <img src="images/DashCam Album Cover.jpg" alt="DashCam Album Cover">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="dashcam-societyhill.html">
+                    <img src="images/Society Hill Album Cover.jpg" alt="Society Hill Album Cover">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="nova-game.html">
+                    <img src="images/Nova Game.jpg" alt="Nova Game Project">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="inkscape-creations.html">
+                    <img src="images/Inkscape Creations_Poster.jpg" alt="Inkscape Creations Poster">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="sega-infographic.html">
+                    <img src="images/Sega Infographic Chart.jpg" alt="Sega Infographic Chart">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="nintendo-power-magazine.html">
+                    <img src="images/Nintendo Power Magazine.jpg" alt="Nintendo Power Magazine Project">
+                </a>
+            </div>
+        </div>
+    </section>
+    
     <footer>
         <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
     </footer>
@@ -84,12 +99,12 @@
     <!-- ✅ JavaScript for Hamburger Menu -->
     <script>
         function toggleMenu() {
-            var menu = document.querySelector(".mobile-menu");
+            var menu = document.getElementById("mobileMenu");
             menu.classList.toggle("active");
         }
     </script>
 
-  <script>
+<script>
     window.addEventListener('resize', function () {
   const menu = document.querySelector('.mobile-menu');
   const hamburger = document.querySelector('.hamburg');
