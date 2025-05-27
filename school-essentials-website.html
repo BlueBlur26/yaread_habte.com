@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio | School Essentials</title>
+  </head>
+  <body>
+    <!-- Cube Animation -->
+    <div class="hero">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+        <img src="images/Y logo.png" alt="Yaread Logo">
+        <span class="logo-text">aread</span>
+        </a>
+        <div class="links">
+          <div class="link"><a href="home.html">Home</a></div>
+          <div class="link"><a href="about.html">About</a></div>
+          <div class="link"><a href="portfolio.html">Portfolio</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-icon" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+    <!-- Header Section -->
+    <header class="project-header">
+      <h1>School Essentials Website</h1>
+    </header>
+    <!-- Main Content -->
+    <section class="typography-&-layout-design">
+      <div class="typography-project">
+        <img src="images/School Essentials Hub - Presented by Stonetile.jpg" alt="Nuit Blanche Poster">
+      </div>
+      <!-- Move Tools Used Below the Images -->
+      <div class="project-tools">
+        <p><strong>Tool(s) used:</strong> Webflow</p>
+      </div>
+      <!-- Centered Project Description -->
+      <div class="project-description">
+        <p>My School Essentials Website project, presented by Stonetile,
+          was designed to be a comprehensive and user-friendly online
+          resource for back-to-school supplies. I focused on creating a
+          clean, organized layout that allows users—students, parents,
+          and teachers—to easily navigate and find the products they
+          need. Using Webflow, I was able to build an accessible and
+          visually appealing website with clear typography and intuitive
+          navigation. This project taught me the importance of balancing
+          aesthetics with functionality to enhance the user experience.
+          The goal was to help visitors quickly and efficiently gear up
+          for a successful school year with affordable, quality essentials.</p>
+      </div>
+    </section>
+    <div class="button-container">
+      <a href="typography-&-layout-design.html" class="nav-button">Back to Typography & Layout Design</a>
+    </div>
+    <footer>
+      <p>&copy; 2025 Yaread Habte | Developed and designed using Visual Studio Code.</p>
+    </footer>
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+      function toggleMenu() {
+          var menu = document.querySelector(".mobile-menu");
+          menu.classList.toggle("active");
+      }
+    </script>
+    <script>
+      window.addEventListener('resize', function () {
+      const menu = document.querySelector('.mobile-menu');
+      const hamburger = document.querySelector('.hamburg');
+      
+      if (window.innerWidth > 884 && menu.classList.contains('active')) {
+      menu.classList.remove('active');
+      }
+      });
+    </script>
+  </body>
+</html>

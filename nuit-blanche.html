@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio | Nuit Blanche</title>
+  </head>
+  <body>
+    <!-- Cube Animation -->
+    <div class="hero">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+        <img src="images/Y logo.png" alt="Yaread Logo">
+        <span class="logo-text">aread</span>
+        </a>
+        <div class="links">
+          <div class="link"><a href="home.html">Home</a></div>
+          <div class="link"><a href="about.html">About</a></div>
+          <div class="link"><a href="portfolio.html">Portfolio</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-icon" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+    <!-- Header Section -->
+    <header class="project-header">
+      <h1>Nuit Blanche</h1>
+    </header>
+    <!-- Main Content -->
+    <section class="typography-&-layout-design">
+      <div class="typography-project">
+        <img src="images/Nuit Blanche Poster.jpg" alt="Nuit Blanche Poster">
+      </div>
+      <!-- Move Tools Used Below the Images -->
+      <div class="project-tools">
+        <p><strong>Tool(s) used:</strong> Adobe Illustrator, Adobe InDesign</p>
+      </div>
+      <!-- Centered Project Description -->
+      <div class="project-description">
+        <p>My Nuit Blanche poster project allowed me to explore the dynamic world of contemporary art
+          and city-wide events. I researched the history and significance of Nuit Blanche in Toronto,
+          aiming to capture the festival’s vibrant energy and cultural impact through bold typography
+          and immersive visual elements. Designing this poster challenged me to balance artistic expression
+          with clear communication, ensuring that the information was both eye-catching and accessible.
+          Throughout the process, I experimented with colour gradients, geometric shapes, and layout
+          techniques to evoke the festival’s spirit of creativity and community engagement. This
+          experience enhanced my ability to conceptualize thematic designs and use digital tools to
+          transform ideas into compelling visuals. Nuit Blanche’s importance as a cultural event inspired
+          me to create a design that reflects the excitement and diversity of the arts in a modern urban setting.
+        </p>
+      </div>
+    </section>
+    <div class="button-container">
+      <a href="typography-&-layout-design.html" class="nav-button">Back to Typography & Layout Design</a>
+    </div>
+    <footer>
+      <p>&copy; 2025 Yaread Habte | Developed and designed using Visual Studio Code.</p>
+    </footer>
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+      function toggleMenu() {
+          var menu = document.querySelector(".mobile-menu");
+          menu.classList.toggle("active");
+      }
+    </script>
+    <script>
+      window.addEventListener('resize', function () {
+      const menu = document.querySelector('.mobile-menu');
+      const hamburger = document.querySelector('.hamburg');
+      
+      if (window.innerWidth > 884 && menu.classList.contains('active')) {
+      menu.classList.remove('active');
+      }
+      });
+    </script>
+  </body>
+</html>

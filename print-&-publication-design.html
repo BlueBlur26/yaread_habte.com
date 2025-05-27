@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio | Print & Publication Design</title>
+  </head>
+  <body>
+    <!-- Cube Animation -->
+    <div class="hero">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+        <img src="images/Y logo.png" alt="Yaread Logo">
+        <span class="logo-text">aread</span>
+        </a>
+        <div class="links">
+          <div class="link"><a href="home.html">Home</a></div>
+          <div class="link"><a href="about.html">About</a></div>
+          <div class="link"><a href="portfolio.html">Portfolio</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-icon" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+<section class="new-layout">
+  <div class="header-section">
+    <h1 class="header-title">Print & Publication Design</h1>
+    <div class="header-buttons"></div>
+  </div>
+  <div class="content-cards">
+    <div class="card">
+      <img src="images/Niagara on the Lake PostCard.jpg" alt="Niagara on the Lake PostCard" class="card-image"/>
+      <h3>Niagara on the Lake Postcard</h3>
+      <p>Captures the charm and history of Niagara on the Lake with an elegant postcard design that highlights local attractions and scenic beauty.</p>
+      <a href="niagara-postcard.html" class="btn-green btn-small">View Project <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="card">
+      <img src="images/Print Process Diagram.jpg" alt="Print Process Diagram" class="card-image"/>
+      <h3>Print Process Diagram</h3>
+      <p>Visualizes the print production stages with a clear, colorful diagram that simplifies complex processes for better understanding.</p>
+      <a href="print-process-diagram.html" class="btn-green btn-small">View Project <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="content-cards">
+    <div class="card">
+      <img src="images/Inkscape Creations_Poster.jpg" alt="InkScape Creations Poster" class="card-image"/>
+      <h3>InkScape Creations</h3>
+      <p>Showcases a diverse portfolio of digital and print projects framed in a warm, inviting display that blends creativity with professionalism.</p>
+      <a href="inkscape-creations.html" class="btn-green btn-small">View Project <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="card">
+      <img src="images/Sernitea.jpg" alt="Sernitea Packaging" class="card-image"/>
+      <h3>Sernitea (2D and 3D Packaging)</h3>
+      <p>Features vibrant and eye-catching packaging designs for Sernitea products, combining 2D graphics with 3D mockups for impactful presentation.</p>
+      <a href="sernitea-packaging.html" class="btn-green btn-small">View Project <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="content-cards">
+    <div class="card">
+      <img src="images/Nintendo Power Magazine.jpg" alt="Nintendo Power Magazine" class="card-image"/>
+      <h3>Nintendo Power Magazine</h3>
+      <p>Presents an engaging magazine layout that merges classic gaming culture with modern design elements, emphasizing dynamic visuals and informative content.</p>
+      <a href="nintendo-power-magazine.html" class="btn-green btn-small">View Project <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="card">
+      <img src="images/Coin Collect Magazine.jpg" alt="Coin Collect Magazine" class="card-image"/>
+      <h3>Coin Collect Magazine</h3>
+      <p>Highlights the rich history of Canadian coins with a visually striking magazine spread that balances detailed imagery and compelling typography.</p>
+      <a href="coin-collect-magazine.html" class="btn-green btn-small">View Project <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+    <div class="button-container">
+      <a href="digital-illustration.html" class="nav-button">← Previous</a>
+      <a href="home.html" class="nav-button">Back to Home</a>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Yaread Habte | Developed and designed using Visual Studio Code.</p>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+      function toggleMenu() {
+        var menu = document.querySelector(".mobile-menu");
+        menu.classList.toggle("active");
+      }
+    </script>
+    <script>
+      document.querySelector('.scroll-down').addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector('#skills');
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    </script>
+    <script>
+      window.addEventListener('resize', function () {
+        const menu = document.querySelector('.mobile-menu');
+        if (window.innerWidth > 884 && menu.classList.contains('active')) {
+          menu.classList.remove('active');
+        }
+      });
+    </script>
+  </body>
+</html>

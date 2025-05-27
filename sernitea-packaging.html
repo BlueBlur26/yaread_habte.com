@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio | Sernitea (2D and 3D Packaging)</title>
+  </head>
+  <body>
+    <!-- Cube Animation -->
+    <div class="hero">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+        <img src="images/Y logo.png" alt="Yaread Logo">
+        <span class="logo-text">aread</span>
+        </a>
+        <div class="links">
+          <div class="link"><a href="home.html">Home</a></div>
+          <div class="link"><a href="about.html">About</a></div>
+          <div class="link"><a href="portfolio.html">Portfolio</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-icon" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+    <!-- Header Section -->
+    <header class="project-header">
+      <h1>Sernitea (2D and 3D Packaging)</h1>
+    </header>
+    <!-- Main Content -->
+    <section class="print-publication">
+      <div class="print-publication-project">
+        <img src="images/Sernitea.jpg" alt="Sernitea 3D Packaging">
+        <img src="images/Sernitea 2D Design.jpg" alt="Sernitea 2D Packaging">
+      </div>
+      <!-- Move Tools Used Below the Images -->
+      <div class="project-tools">
+        <p><strong>Tool(s) used:</strong> Adobe Photoshop, Adobe Illustrator</p>
+      </div>
+      <!-- Centered Project Description -->
+      <div class="project-description">
+        <p>My Sernitea packaging project showcases a thoughtful blend of 2D and
+            3D design elements, tailored for print and publication purposes. The
+            2D designs highlight vibrant, nature-inspired graphics and clear
+            nutritional information, emphasizing flavors such as Peach, Mango,
+            and Mixed Berries in a visually appealing way. The 3D packaging mockups
+            illustrate how these designs wrap around the tea boxes, creating an
+            immersive and tangible product experience. The hand-drawn sketches
+            demonstrate the ideation and layout planning process, ensuring that
+            essential elements like product description, ingredients, instructions,
+            and barcodes are strategically positioned for readability and aesthetic
+            balance. Overall, this project successfully combines creative visuals
+            with practical packaging considerations to deliver a cohesive and
+            attractive product design for Sernitea.</p>
+      </div>
+    </section>
+    <div class="button-container">
+      <a href="print-&-publication-design.html" class="nav-button">Back to Print & Publication Design</a>
+    </div>
+    <footer>
+      <p>&copy; 2025 Yaread Habte | Developed and designed using Visual Studio Code.</p>
+    </footer>
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+      function toggleMenu() {
+          var menu = document.querySelector(".mobile-menu");
+          menu.classList.toggle("active");
+      }
+    </script>
+    <script>
+      window.addEventListener('resize', function () {
+      const menu = document.querySelector('.mobile-menu');
+      const hamburger = document.querySelector('.hamburg');
+      
+      if (window.innerWidth > 884 && menu.classList.contains('active')) {
+      menu.classList.remove('active');
+      }
+      });
+    </script>
+  </body>
+</html>

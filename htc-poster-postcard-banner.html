@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio | HTC Poster, Postcard, and Web Banner</title>
+  </head>
+  <body>
+    <!-- Cube Animation -->
+    <div class="hero">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+        <img src="images/Y logo.png" alt="Yaread Logo">
+        <span class="logo-text">aread</span>
+        </a>
+        <div class="links">
+          <div class="link"><a href="home.html">Home</a></div>
+          <div class="link"><a href="about.html">About</a></div>
+          <div class="link"><a href="portfolio.html">Portfolio</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-icon" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+    <!-- Header Section -->
+    <header class="project-header">
+      <h1>HTC Poster, Postcard, and Web Banner</h1>
+    </header>
+    <!-- Main Content -->
+    <section class="branding-&-visual-identity">
+      <div class="branding-project">
+        <img src="images/HTC Poster.jpg" alt="HTC Poster">
+        <img src="images/HTC Postcard and Web Banner.png" alt="HTC Post Card and Web Banner">
+      </div>
+      <!-- Move Tools Used Below the Images -->
+      <div class="project-tools">
+        <p><strong>Tool(s) used:</strong> Adobe Photoshop, Adobe Illustrator</p>
+      </div>
+      <!-- Centered Project Description -->
+      <div class="project-description">
+        <p>The HTC Poster, Postcard, and Web Banner project reflects the brand's
+            commitment to innovation and sleek, minimalist design. HTC aims to
+            connect with consumers aged 16 to 50 who value premium
+            design and advanced smartphone features. The designs showcase
+            consistent branding elements such as the Zygo logo, modern
+            typography, and a vibrant yet sophisticated color palette featuring
+            lime green, turquoise, and magenta gradients. The poster emphasizes
+            HTC’s clean and professional aesthetic, while the postcard integrate
+            imagery and colors that represent strength, reliability, and style.
+            The web banner adds dynamic elements with triangles and vibrant
+            gradients to capture attention on digital platforms. Throughout the
+            project, the placement of logos, social media icons, and the use of
+            different shapes enhance brand recognition and create a cohesive
+            visual identity aligned with HTC’s innovative spirit and long-term
+            goal of leading the mobile communication industry.</p>
+      </div>
+    </section>
+    <div class="button-container">
+      <a href="branding-&-visual-identity.html" class="nav-button">Back to Branding & Visual Identity</a>
+    </div>
+    <footer>
+      <p>&copy; 2025 Yaread Habte | Developed and designed using Visual Studio Code.</p>
+    </footer>
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+      function toggleMenu() {
+          var menu = document.querySelector(".mobile-menu");
+          menu.classList.toggle("active");
+      }
+    </script>
+    <script>
+      window.addEventListener('resize', function () {
+      const menu = document.querySelector('.mobile-menu');
+      const hamburger = document.querySelector('.hamburg');
+      
+      if (window.innerWidth > 884 && menu.classList.contains('active')) {
+      menu.classList.remove('active');
+      }
+      });
+    </script>
+  </body>
+</html>
