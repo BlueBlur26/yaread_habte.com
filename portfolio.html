@@ -1,119 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Yaread's Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Cube Animation -->
+    <div class="hero">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+    <!-- Navigation -->
     <nav>
-        <div class="nav-container">
-          <a href="index.html" class="logo">
-                <img src="images/Y logo.png" alt="Yaread Logo">
-                <span class="logo-text">aread</span>
-          </a>
-            <div class="links">
-                <div class="link"><a href="home.html">Home</a></div>
-                <div class="link"><a href="about.html">About</a></div>
-                <div class="link"><a href="portfolio.html">Portfolio</a></div>
-                <div class="link"><a href="contact.html">Contact</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+        <img src="images/Y logo.png" alt="Yaread Logo">
+        <span class="logo-text">aread</span>
+        </a>
+        <div class="links">
+          <div class="link"><a href="home.html">Home</a></div>
+          <div class="link"><a href="about.html">About</a></div>
+          <div class="link"><a href="portfolio.html">Portfolio</a></div>
         </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+      </div>
     </nav>
-
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="close-icon" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
     </div>
-
+    <!-- Portfolio Intro Section -->
     <section>
-        <div class="main-container">
-            <div class="image">
-                <img src="images/portfolio.png">
-            </div>
-            <div class="content">
-                <h1 class="intro-text">My <span> Portfolio</span></h1>
-                <p>Welcome to my portfolio! Here, you'll find a collection of my design projects, showcasing my skills in branding and digital illustration. Each project represents my passion for creativity, problem-solving, and visual storytelling.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/yaread-habte-431664163" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.behance.net/yareadhabte" target="_blank"><i class="fa-brands fa-behance"></i></a>
-                    <a href="https://youtube.com/@blueblur_2680?si=-03tpCZzJTmL7HLw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/blueblur_26/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="btn">
-                    <a href="contact.html" class="button">Let's Connect</a>
-                </div>
-            </div>
+      <div class="main-container">
+        <div class="image">
+          <img src="images/portfolio.png">
         </div>
+        <div class="content">
+          <h1 class="intro-text">My <span> Portfolio</span></h1>
+          <p>Welcome to my portfolio! Here, you'll find a collection of my design projects, showcasing my skills in branding and digital illustration. Each project represents my passion for creativity, problem-solving, and visual storytelling.</p>
+        </div>
+      </div>
+      </div>
     </section>
-
+    <!-- Portfolio Gallery Section -->
     <section class="gallery-section">
-        <h1>My Projects</h1>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <a href="dashcam-societyhill.html">
-                    <img src="images/DashCam Album Cover.jpg" alt="DashCam Album Cover">
-                </a>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <a href="dashcam-societyhill.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>DashCam & Society Hill</h3>
+                <p>Album Cover Design</p>
+              </div>
             </div>
-            <div class="gallery-item">
-                <a href="nova-game.html">
-                    <img src="images/Nova Game.jpg" alt="Nova Game Project">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="inkscape-creations.html">
-                    <img src="images/Inkscape Creations_Poster.jpg" alt="Inkscape Creations Poster">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="sega-infographic.html">
-                    <img src="images/Sega Infographic Chart.jpg" alt="Sega Infographic Chart">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="nintendo-power-magazine.html">
-                    <img src="images/Nintendo Power Magazine.jpg" alt="Nintendo Power Magazine Project">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="emerald-mania.html">
-                    <img src="images/Emerald Mania.jpg" alt="Emerald Mania Project">
-                </a>
-            </div>
+            <img src="images/DashCam and Society Hill Album Cover.jpg" alt="DashCam and Society Hill Album Cover">
+          </a>
         </div>
+        <div class="gallery-item">
+          <a href="nova-game.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Nova Game</h3>
+                <p>Branding</p>
+              </div>
+            </div>
+            <img src="images/Nova Game.jpg" alt="Nova Game Project">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="inkscape-creations.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Inkscape Creations</h3>
+                <p>Production Technology</p>
+              </div>
+            </div>
+            <img src="images/Inkscape Creations_Poster.jpg" alt="Inkscape Creations Poster">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="sega-infographic.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Sega Infographic</h3>
+                <p>Information Design</p>
+              </div>
+            </div>
+            <img src="images/Sega Infographic Chart.jpg" alt="Sega Infographic Chart">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="nintendo-power-magazine.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Nintendo Power Magazine</h3>
+                <p>Editorial Design</p>
+              </div>
+            </div>
+            <img src="images/Nintendo Power Magazine.jpg" alt="Nintendo Power Magazine Project">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="emerald-mania.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Emerald Mania</h3>
+                <p>Major Studio Project</p>
+              </div>
+            </div>
+            <img src="images/Emerald Mania.jpg" alt="Emerald Mania Project">
+          </a>
+        </div>
+      </div>
     </section>
-    
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
+      <p>&copy; 2025 Yaread Habte | Developed and designed using Visual Studio Code.</p>
     </footer>
-
     <!-- ✅ JavaScript for Hamburger Menu -->
     <script>
-        function toggleMenu() {
-            var menu = document.getElementById("mobileMenu");
-            menu.classList.toggle("active");
-        }
+      function toggleMenu() {
+        var menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("active");
+      }
     </script>
-
-<script>
-    window.addEventListener('resize', function () {
-  const menu = document.querySelector('.mobile-menu');
-  const hamburger = document.querySelector('.hamburg');
-
-  if (window.innerWidth > 884 && menu.classList.contains('active')) {
-    menu.classList.remove('active');
-  }
-});
-  </script>
-
-</body>
+    <script>
+      window.addEventListener('resize', function () {
+        const menu = document.querySelector('.mobile-menu');
+        const hamburger = document.querySelector('.hamburg');
+      
+        if (window.innerWidth > 884 && menu.classList.contains('active')) {
+          menu.classList.remove('active');
+        }
+      });
+    </script>
+  </body>
 </html>
