@@ -354,7 +354,7 @@ a.logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: white;
     animation: bounce 2s infinite;
     text-decoration: none;
@@ -1336,7 +1336,7 @@ footer {
         justify-content: center;
         align-items: center;
         position: relative;
-        height: 80px;
+        height: 90px;
     }
 
     .logo {
@@ -1376,17 +1376,27 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 30px 0;
+        padding-top: 10px;
     }
 
     .main-container .image img {
         width: 100%;
         max-width: 600px;
+        padding-top: 20px;
     }
 
     .main-container .content {
+        margin-top: 10px;
         width: 80%;
         margin: auto;
+    }
+
+    .main-container .content h1 {
+    margin-top: 0 !important;   
+    }
+
+    .main-container .content p {
+    margin-top: 5px !important; 
     }
 
     .content .typewriter {
@@ -1488,6 +1498,7 @@ footer {
         align-items: center;
         gap: 40px;
         padding: 10px;
+        margin-top: 20px;
     }
 
     .gallery-item {
@@ -1559,6 +1570,10 @@ footer {
         font-size: 1.8rem;
     }
 
+    .scroll-down {
+    margin-bottom: 60px;
+    }
+
     /* General container adjustments */
     .project-1,
     .project-2,
@@ -1579,7 +1594,7 @@ footer {
         /* stack images vertically */
         gap: 20px;
         max-width: 90%;
-        margin: auto;
+        margin-bottom: 60px;
         justify-content: center;
     }
 
