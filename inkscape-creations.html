@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>InkScape Creations</title>
-</head>
-<body>
-    <nav>
-        <div class="nav-container">
-          <a href="index.html" class="logo">
-                <img src="images/Y logo.png" alt="Yaread Logo">
-                <span class="logo-text">aread</span>
-          </a>
-            <div class="links">
-                <div class="link"><a href="home.html">Home</a></div>
-                <div class="link"><a href="about.html">About</a></div>
-                <div class="link"><a href="portfolio.html">Portfolio</a></div>
-                <div class="link"><a href="contact.html">Contact</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <title>Yaread's Portfolio | InkScape Creations</title>
+  </head>
+  <body>
+    <!-- Cube Animation -->
+    <div class="hero">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
     </div>
-
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+        <img src="images/Y logo.png" alt="Yaread Logo">
+        <span class="logo-text">aread</span>
+        </a>
+        <div class="links">
+          <div class="link"><a href="home.html">Home</a></div>
+          <div class="link"><a href="about.html">About</a></div>
+          <div class="link"><a href="portfolio.html">Portfolio</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-icon" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
     <!-- Header Section -->
     <header class="project-header">
-        <h1>InkScape Creations</h1>
+      <h1>InkScape Creations</h1>
     </header>
-
     <!-- Main Content -->
-<section class="project-3">
-    <div class="inkscape-creations">
+    <section class="project-3 fade-in">
+      <div class="inkscape-creations">
         <div class="business-card">
-            <img src="images/Business Card.png" alt="InkScape Creations Business Card">
+          <img src="images/Business Card.png" alt="InkScape Creations Business Card">
         </div>
         <div class="poster">
-            <img src="images/Poster.jpg" alt="InkScape Creations Poster">
+          <img src="images/Poster.jpg" alt="InkScape Creations Poster">
         </div>
         <div class="post-card">
-            <img src="images/Post Card.png" alt="InkScape Creations Post Card">
+          <img src="images/Post Card.png" alt="InkScape Creations Post Card">
         </div>
-    </div>
-    
-        <!-- Move Tools Used Below the Images -->
-        <div class="project-tools">
-            <p><strong>Tool(s) used:</strong> Adobe Illustrator</p>
-        </div>
-    
-        <!-- Centered Project Description -->
-        <div class="project-description">
-            <p>InkScape Creations is a printing brand. I used all my past work
-                from semester 1 to 3 as well as work from Design Foundation.
-                The only challenge I faced here was learning how to create an
-                emerald by scratch as this took some time to do. However, once I
-                watched a YouTube tutorial on how to create one, I was back on
-                track. I finished the poster and then I put my focus on the business
-                card and post card. After printing the materials, I was very satisfied
-                on how they looked. Not only it was high quality but the logo and
-                past work on the poster looked amazing. What I learned from this
-                project is the importance of combining creativity with technical skills
-                to create cohesive branding materials. I learned how to incorporate
-                past work effectively into a new project, showcasing growth and
-                consistency. As a result, I feel more confident in my ability to
-                develop and execute branding concepts from start to finish.</p>
-        </div>
+      </div>
+      <!-- Move Tools Used Below the Images -->
+      <div class="project-tools">
+        <p><strong>Tool(s) used:</strong> Adobe Illustrator</p>
+      </div>
+      <!-- Centered Project Description -->
+      <div class="project-description">
+        <p>InkScape Creations is a printing brand. I used all my past work
+          from semester 1 to 3 as well as work from Design Foundation.
+          The only challenge I faced here was learning how to create an
+          emerald by scratch as this took some time to do. However, once I
+          watched a YouTube tutorial on how to create one, I was back on
+          track. I finished the poster and then I put my focus on the business
+          card and post card. After printing the materials, I was very satisfied
+          on how they looked. Not only it was high quality but the logo and
+          past work on the poster looked amazing. What I learned from this
+          project is the importance of combining creativity with technical skills
+          to create cohesive branding materials. I learned how to incorporate
+          past work effectively into a new project, showcasing growth and
+          consistency. As a result, I feel more confident in my ability to
+          develop and execute branding concepts from start to finish.
+        </p>
+      </div>
     </section>
-
     <div class="button-container">
-        <a href="nova-game.html" class="nav-button">← Previous</a>
-        <a href="portfolio.html" class="nav-button">Back to Portfolio</a>
-        <a href="sega-infographic.html" class="nav-button">Next  →</a>
+      <a href="nova-game.html" class="nav-button">← Previous</a>
+      <a href="sega-infographic.html" class="nav-button">Next  →</a>
     </div>
-
     <footer>
-        <p>&copy; 2025 Yaread Habte. All rights reserved.</p>
+      <p>&copy; 2025 Yaread Habte | Developed and designed using Visual Studio Code.</p>
     </footer>
-
     <!-- ✅ JavaScript for Hamburger Menu -->
     <script>
-        function toggleMenu() {
-            var menu = document.querySelector(".mobile-menu");
-            menu.classList.toggle("active");
-        }
+      function toggleMenu() {
+          var menu = document.querySelector(".mobile-menu");
+          menu.classList.toggle("active");
+      }
     </script>
-
-  <script>
-    window.addEventListener('resize', function () {
-  const menu = document.querySelector('.mobile-menu');
-  const hamburger = document.querySelector('.hamburg');
-
-  if (window.innerWidth > 884 && menu.classList.contains('active')) {
-    menu.classList.remove('active');
-  }
-});
-  </script>
-
-</body>
+    <script>
+      window.addEventListener('resize', function () {
+      const menu = document.querySelector('.mobile-menu');
+      const hamburger = document.querySelector('.hamburg');
+      
+      if (window.innerWidth > 884 && menu.classList.contains('active')) {
+      menu.classList.remove('active');
+      }
+      });
+    </script>
+  </body>
 </html>
