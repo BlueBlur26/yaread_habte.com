@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Yaread's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Yaread's Portfolio | Portfolio</title>
   </head>
   <body>
     <!-- Cube Animation -->
@@ -26,8 +28,8 @@
     <nav>
       <div class="nav-container">
         <a href="index.html" class="logo">
-        <img src="images/Y logo.png" alt="Yaread Logo">
-        <span class="logo-text">aread</span>
+          <img src="images/Y logo.png" alt="Yaread Logo" />
+          <span class="logo-text">aread</span>
         </a>
         <div class="links">
           <div class="link"><a href="home.html">Home</a></div>
@@ -52,17 +54,30 @@
     <section>
       <div class="main-container">
         <div class="image">
-          <img src="images/portfolio.png">
+          <img src="images/portfolio.png" alt="Portfolio Intro Image" />
         </div>
         <div class="content">
-          <h1 class="intro-text">My <span> Portfolio</span></h1>
-          <p>Welcome to my portfolio! Here, you'll find a collection of my design projects, showcasing my skills in branding and digital illustration. Each project represents my passion for creativity, problem-solving, and visual storytelling.</p>
+          <h1 class="intro-text">
+            My <span> Portfolio</span>
+          </h1>
+          <p>
+            Welcome to my portfolio! Here, you'll find a collection of my design
+            projects, showcasing my skills in branding and digital illustration.
+            Each project represents my passion for creativity, problem-solving,
+            and visual storytelling.
+          </p>
+          <a
+            href="#projects"
+            class="scroll-down"
+            aria-label="Scroll down to projects"
+          >
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
         </div>
-      </div>
       </div>
     </section>
     <!-- Portfolio Gallery Section -->
-    <section class="gallery-section">
+    <section id="projects" class="gallery-section">
       <div class="gallery-grid">
         <div class="gallery-item">
           <a href="dashcam-societyhill.html" class="gallery-link">
@@ -72,7 +87,10 @@
                 <p>Album Cover Design</p>
               </div>
             </div>
-            <img src="images/DashCam and Society Hill Album Cover.jpg" alt="DashCam and Society Hill Album Cover">
+            <img
+              src="images/DashCam and Society Hill Album Cover.jpg"
+              alt="DashCam and Society Hill Album Cover"
+            />
           </a>
         </div>
         <div class="gallery-item">
@@ -83,7 +101,7 @@
                 <p>Branding</p>
               </div>
             </div>
-            <img src="images/Nova Game.jpg" alt="Nova Game Project">
+            <img src="images/Nova Game.jpg" alt="Nova Game Project" />
           </a>
         </div>
         <div class="gallery-item">
@@ -94,7 +112,7 @@
                 <p>Production Technology</p>
               </div>
             </div>
-            <img src="images/Inkscape Creations_Poster.jpg" alt="Inkscape Creations Poster">
+            <img src="images/Inkscape Creations_Poster.jpg" alt="Inkscape Creations Poster" />
           </a>
         </div>
         <div class="gallery-item">
@@ -105,7 +123,7 @@
                 <p>Information Design</p>
               </div>
             </div>
-            <img src="images/Sega Infographic Chart.jpg" alt="Sega Infographic Chart">
+            <img src="images/Sega Infographic Chart.jpg" alt="Sega Infographic Chart" />
           </a>
         </div>
         <div class="gallery-item">
@@ -116,7 +134,7 @@
                 <p>Editorial Design</p>
               </div>
             </div>
-            <img src="images/Nintendo Power Magazine.jpg" alt="Nintendo Power Magazine Project">
+            <img src="images/Nintendo Power Magazine.jpg" alt="Nintendo Power Magazine Project" />
           </a>
         </div>
         <div class="gallery-item">
@@ -127,7 +145,7 @@
                 <p>Major Studio Project</p>
               </div>
             </div>
-            <img src="images/Emerald Mania.jpg" alt="Emerald Mania Project">
+            <img src="images/Emerald Mania.jpg" alt="Emerald Mania Project" />
           </a>
         </div>
       </div>
@@ -144,14 +162,27 @@
       }
     </script>
     <script>
-      window.addEventListener('resize', function () {
-        const menu = document.querySelector('.mobile-menu');
-        const hamburger = document.querySelector('.hamburg');
-      
-        if (window.innerWidth > 884 && menu.classList.contains('active')) {
-          menu.classList.remove('active');
+      window.addEventListener("resize", function () {
+        const menu = document.querySelector(".mobile-menu");
+        const hamburger = document.querySelector(".hamburg");
+
+        if (window.innerWidth > 884 && menu.classList.contains("active")) {
+          menu.classList.remove("active");
         }
       });
+    </script>
+
+    <!-- Smooth scroll for scroll-down arrow -->
+    <script>
+      document
+        .querySelector(".scroll-down")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // stop instant jump
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" }); // smooth scroll
+          }
+        });
     </script>
   </body>
 </html>
