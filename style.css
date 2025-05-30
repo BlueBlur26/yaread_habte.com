@@ -1536,6 +1536,9 @@ footer {
     .print-publication-project {
         flex-direction: column;
         gap: 20px;
+        align-items: center;
+        max-width: 90%;
+        margin: auto;
     }
 
     .typography-project img,
@@ -1544,6 +1547,7 @@ footer {
     .print-publication-project img {
         width: 90%;
         max-width: 400px;
+        height: auto;
         margin: 0 auto 30px auto;
     }
 
