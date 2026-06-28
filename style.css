@@ -1961,10 +1961,6 @@ footer {
         font-size: 1.8rem;
     }
 
-    .scroll-down {
-        margin-bottom: 60px;
-    }
-
     /* General container adjustments */
     .project-1,
     .project-2,
@@ -2283,11 +2279,14 @@ footer {
 /* ========================= Scroll Arrow Mobile ========================== */
 
 .scroll-down {
-    width: 100%;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin: 35px auto 0;
+    width: 100%;
 }
 
 footer {
