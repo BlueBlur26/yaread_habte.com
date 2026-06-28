@@ -9,19 +9,6 @@
       <title>Yaread's Portfolio</title>
    </head>
    <body>
-      <!-- Cube Animation -->
-      <div class="hero">
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-      </div>
       <!-- Navigation -->
       <nav>
          <div class="nav-container">
@@ -32,7 +19,7 @@
             <div class="links">
                <div class="link"><a href="home.html">Home</a></div>
                <div class="link"><a href="about.html">About</a></div>
-               <div class="link"><a href="portfolio.html">Portfolio</a></div>
+               <div class="link"><a href="contact.html">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
          </div>
@@ -45,7 +32,7 @@
          <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
          </ul>
       </div>
       <!-- Hero Section -->
@@ -56,30 +43,88 @@
                <h1 class="intro-text">Hello! <span>I'm Yaread!</span></h1>
                <div class="typewriter">I am a <span></span></div>
                <p>I specialize in creating engaging visuals that bring ideas to life through typography, colour, and imagery. Let’s create something amazing together!</p>
-               <a href="#skills" class="scroll-down">
-               <i class="fa-solid fa-chevron-down"></i>
+               <a href="#portfolio" class="scroll-down" aria-label="Scroll down to portfolio">
+               <i class="fa-solid fa-angle-down"></i>
                </a>
             </div>
          </div>
       </section>
-      <!-- Design Skills Section -->
-      <section id="skills" class="design-skills-grid">
-         <a href="typography-&-layout-design.html" class="design-box left typography">
-            <h2>Typography & Layout Design</h2>
-         </a>
-         <a href="branding-&-visual-identity.html" class="design-box right branding">
-            <h2>Branding & Visual Identity</h2>
-         </a>
-         <a href="digital-illustration.html" class="design-box left illustration">
-            <h2>Digital Illustration</h2>
-         </a>
-         <a href="print-&-publication-design.html" class="design-box right print">
-            <h2>Print & Publication Design</h2>
-         </a>
-      </section>
+    <!-- Portfolio Gallery Section -->
+    <section id="portfolio" class="gallery-section">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <a href="dashcam-societyhill.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>DashCam & Society Hill</h3>
+                <p>Album Cover Design</p>
+              </div>
+            </div>
+            <img
+              src="images/DashCam and Society Hill Album Cover.jpg"
+              alt="DashCam and Society Hill Album Cover" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="nova-game.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Nova Game</h3>
+                <p>Branding</p>
+              </div>
+            </div>
+            <img src="images/Nova Game.jpg" alt="Nova Game Project" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="inkscape-creations.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Inkscape Creations</h3>
+                <p>Production Technology</p>
+              </div>
+            </div>
+            <img src="images/Inkscape Creations_Poster.jpg" alt="Inkscape Creations Poster" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="sega-infographic.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Sega Infographic</h3>
+                <p>Information Design</p>
+              </div>
+            </div>
+            <img src="images/Sega Infographic Chart.jpg" alt="Sega Infographic Chart" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="nintendo-power-magazine.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Nintendo Power Magazine</h3>
+                <p>Editorial Design</p>
+              </div>
+            </div>
+            <img src="images/Nintendo Power Magazine.jpg" alt="Nintendo Power Magazine Project" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="emerald-mania.html" class="gallery-link">
+            <div class="gallery-overlay">
+              <div class="overlay-text">
+                <h3>Emerald Mania</h3>
+                <p>Major Studio Project</p>
+              </div>
+            </div>
+            <img src="images/Emerald Mania.jpg" alt="Emerald Mania Project" />
+          </a>
+        </div>
+      </div>
+    </section>
       <!-- Footer -->
       <footer>
-         <p>&copy; 2025 Yaread Habte | Developed and designed using Visual Studio Code.</p>
+         <p>&copy; 2026 Yaread Habte | Developed and designed using Visual Studio Code.</p>
       </footer>
       <!-- JavaScript -->
       <script>
@@ -89,22 +134,16 @@
          }
       </script>
       <script>
-         document.querySelector('.scroll-down').addEventListener('click', function(e) {
-           e.preventDefault();
-           const target = document.querySelector('#skills');
-           target.scrollIntoView({
-             behavior: 'smooth',
-             block: 'start'
-           });
-         });
-      </script>
-      <script>
-         window.addEventListener('resize', function () {
-           const menu = document.querySelector('.mobile-menu');
-           if (window.innerWidth > 884 && menu.classList.contains('active')) {
-             menu.classList.remove('active');
-           }
-         });
+document.querySelector('.scroll-down').addEventListener('click', function(e) {
+  e.preventDefault();
+
+  const target = document.querySelector('#portfolio');
+
+  target.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+});
       </script>
    </body>
 </html>
