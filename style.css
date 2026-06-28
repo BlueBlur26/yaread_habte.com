@@ -2211,23 +2211,21 @@ footer {
 }
 
 .journey-images {
-    padding: 60px 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    width: 450px;
+    justify-content: center;
 }
 
 .journey-images img:nth-child(1),
-.journey-images img:nth-child(2) {
-    width: 100%;
-    height: auto;
-}
-
+.journey-images img:nth-child(2),
 .journey-images img:nth-child(3) {
     width: 100%;
     height: auto;
-    grid-column: 1 / -1;
+    margin: 0;
 }
 
 /* ========================= Beyond Design Mobile ========================== */
