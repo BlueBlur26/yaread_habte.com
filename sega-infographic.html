@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="images/favicon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio | Sega Infographic</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+        <img src="images/Y logo.png" alt="Yaread Logo">
+        <span class="logo-text">aread</span>
+        </a>
+        <div class="links">
+          <div class="link"><a href="home.html">Home</a></div>
+          <div class="link"><a href="about.html">About</a></div>
+          <div class="link"><a href="contact.html">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-icon" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Header Section -->
+    <header class="project-header">
+      <h1>Sega Infographic</h1>
+    </header>
+    <!-- Main Content -->
+    <section class="project-4">
+      <div class="sega-infographic">
+        <img src="images/Sega Infographic Poster.jpg" alt="Sega Infographic">
+      </div>
+      <!-- Move Tools Used Below the Images -->
+      <div class="project-tools">
+        <p><strong>Tool(s) used:</strong>Adobe Illustrator</p>
+      </div>
+      <!-- Centered Project Description -->
+      <div class="project-description">
+        <p>To create my inforgraphic, I did my research on Sega and their
+          consoles. I separated them into three eras. The first being early
+          days explaining their first few consoles, followed by the golden
+          age where their more notable consoles such as the Sega Genesis
+          and Sega CD, and lastly the innovation and decline where the
+          last of Sega’s consoles, notably the Saturn and the Dreamcast
+          were released. The next phase was the sketches and I listed three
+          sketches involving rings or emeralds in different designs. For my
+          final design, I combined the two and added them both in a vertical
+          shaped poster, while adding the emeralds behind the text with a
+          lowered opacity for better reading. The colours I used were pink,
+          blue, green, and yellow. What I learned from this infographic
+          was how to properly structure information visually to tell a clear
+          infographic. While Sega is no longer in the console industry,
+          they continue to release games for current generation
+          consoles and PC.
+        </p>
+      </div>
+    </section>
+      <section class="project-4">
+      <h1>Sketches</h1>
+      <div class="image-pair">
+        <img src="images/Sega Infographic Sketch.jpg" class="stages-img" alt="Sega Infographic Sketches">
+      </div>
+    </section>
+    <section class="project-4">
+      <h1>Typography</h1>
+      <div class="sega-infographic-typography">
+        <img src="images/Sega Infographic - Typography.png" class="stages-img" alt="Sega Infographic Typography">
+      </div>
+    </section>
+    <section class="project-4">
+      <h1>Brand Colours</h1>
+      <div class="sega-infographic-brand-colours">
+        <img src="images/Sega Infographic Brand Colours.png" class="stages-img" alt="Sega Infographic Brand Colours">
+      </div>
+    </section>
+    <section class="project-4">
+      <h1>Iconography</h1>
+      <div class="sega-infographic-iconography">
+        <img src="images/Sega Infographic - Iconography.jpg" class="stages-img" alt="Sega Infographic Social Media">
+      </div>
+    </section>
+    <div class="button-container">
+      <a href="inkscape-creations.html" class="nav-button">← Previous</a>
+      <a href="nintendo-power-magazine.html" class="nav-button">Next →</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Yaread Habte | Developed and designed using Visual Studio Code.</p>
+    </footer>
+    <!-- ✅ JavaScript for Hamburger Menu -->
+    <script>
+      function toggleMenu() {
+          var menu = document.querySelector(".mobile-menu");
+          menu.classList.toggle("active");
+      }
+    </script>
+    <script>
+      window.addEventListener('resize', function () {
+      const menu = document.querySelector('.mobile-menu');
+      const hamburger = document.querySelector('.hamburg');
+      
+      if (window.innerWidth > 884 && menu.classList.contains('active')) {
+      menu.classList.remove('active');
+      }
+      });
+    </script>
+  </body>
+</html>

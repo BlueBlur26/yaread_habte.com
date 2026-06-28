@@ -1,100 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/png" href="images/favicon.png">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-      <link rel="stylesheet" href="style.css">
-      <title>Yaread's Portfolio | About</title>
-   </head>
-   <body>
-      <!-- Cube Animation -->
-      <div class="hero">
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-         <div class="cube"></div>
-      </div>
-      <!-- Navigation -->
-      <nav>
-         <div class="nav-container">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaread's Portfolio | About</title>
+</head>
+
+<body>
+
+    <!-- ========================= Navigation ========================== -->
+    <nav>
+        <div class="nav-container">
+
             <a href="index.html" class="logo">
-            <img src="images/Y logo.png" alt="Yaread Logo">
-            <span class="logo-text">aread</span>
+                <img src="images/Y logo.png" alt="Yaread Logo">
+                <span class="logo-text">aread</span>
             </a>
+
             <div class="links">
-               <div class="link"><a href="home.html">Home</a></div>
-               <div class="link"><a href="about.html">About</a></div>
-               <div class="link"><a href="portfolio.html">Portfolio</a></div>
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
             </div>
+
             <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
-         </div>
-      </nav>
-      <!-- Mobile Menu -->
-      <div class="mobile-menu" id="mobileMenu">
-         <div class="close-icon" onclick="toggleMenu()">
+
+        </div>
+    </nav>
+
+    <!-- ========================= Mobile Menu ========================== -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <div class="close-icon" onclick="toggleMenu()">
             <i class="fas fa-times"></i>
-         </div>
-         <ul>
+        </div>
+
+        <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-         </ul>
-      </div>
-      <!-- Main Section -->
-      <section>
-         <div class="main-container">
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <!-- ========================= About Me ========================== -->
+    <section>
+
+        <div class="main-container">
+
             <div class="image">
-               <img src="images/profile-picture.png" alt="Yaread Logo">
+                <img src="images/profile-picture.png" alt="Yaread Logo">
             </div>
+
             <div class="content">
-               <h1 class="intro-text">About <span>me</span></h1>
-               <p>My name is Yaread Habte. I hold a background in visual
-                  communication and graphic design, with experience working on
-                  branding, web design, and digital technology. I have skills in using
-                  Adobe Photoshop, Illustrator, and InDesign.
-               </p>
-               <!-- Social Media Icons -->
-               <div class="social-links">
-                  <a href="https://www.linkedin.com/in/yaread-habte-431664163" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="https://www.behance.net/yareadhabte" target="_blank"><i class="fa-brands fa-behance"></i></a>
-                  <a href="https://youtube.com/@blueblur_2680?si=-03tpCZzJTmL7HLw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                  <a href="https://www.instagram.com/blueblur_26/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-               </div>
-               <!-- Contact Button -->
+
+                <h1 class="intro-text">
+                    About <span>me</span>
+                </h1>
+
+                <p>
+                    My name is Yaread Habte. I hold a background in visual
+                    communication and graphic design, with experience working on
+                    branding, web design, and digital technology. I have skills in using
+                    Adobe Photoshop, Illustrator, and InDesign.
+                </p>
+
+                <!-- Social Media Icons -->
+                <div class="social-links">
+
+                    <a href="https://www.linkedin.com/in/yaread-habte-431664163" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.behance.net/yareadhabte" target="_blank">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+
+                    <a href="https://youtube.com/@blueblur_2680?si=-03tpCZzJTmL7HLw" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/blueblur_26/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
                <div class="btn">
-                  <a href="mailto:yaread4000@yahoo.ca?subject=Portfolio Inquiry&body=Hi Yaread,%0D%0A%0D%0AI came across your portfolio and would love to connect!" class="button">Let's Connect</a>
+                  <a href="pdf/Yaread Habte Resume.pdf"
+                     target="_blank"
+                     class="pdf-button">
+                     My Resume
+                  </a>
                </div>
+
             </div>
-         </div>
-      </section>
-      <!-- Footer -->
-      <footer>
-         <p>&copy; 2026 Yaread Habte | Developed and designed using Visual Studio Code.</p>
-      </footer>
-      <!-- JavaScript: Hamburger Toggle -->
-      <script>
-         function toggleMenu() {
-           var menu = document.querySelector(".mobile-menu");
-           menu.classList.toggle("active");
-         }
-      </script>
-      <!-- JavaScript: Auto Close Mobile Menu on Resize -->
-      <script>
-         window.addEventListener('resize', function () {
-           const menu = document.querySelector('.mobile-menu');
-           const hamburger = document.querySelector('.hamburg');
-           if (window.innerWidth > 884 && menu.classList.contains('active')) {
-             menu.classList.remove('active');
-           }
-         });
-      </script>
-   </body>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= My Design Journey ========================== -->
+    <section id="design-journey" class="design-journey">
+
+        <div class="journey-container">
+
+            <div class="journey-text reveal-left">
+
+                <h2>My Graphic Design Journey</h2>
+
+                <p>
+                    My journey into graphic design began in 2020 while studying in
+                    Humber College's Design Foundation program. During my final
+                    semester, I enrolled in an introductory Graphic Design course
+                    that challenged me to explore visual communication through
+                    creative projects and design assignments.
+                </p>
+
+                <p>
+                    As I developed concepts, experimented with typography, and
+                    worked with digital tools, I discovered a passion for design
+                    that I had never fully recognized before. What started as a
+                    classroom assignment quickly became a creative outlet that
+                    allowed me to combine problem-solving, storytelling, and visual
+                    expression.
+                </p>
+
+                <p>
+                    The projects I created during that year helped me realize that
+                    graphic design was more than just making things look appealing—
+                    it was about communicating ideas, building connections, and
+                    creating meaningful experiences. That discovery inspired me to
+                    continue my education in Graphic Design and develop the skills
+                    that shape my work today.
+                </p>
+
+            </div>
+
+            <div class="journey-images reveal-right">
+
+                <img src="images/Canadian Wolf Poster.jpg"
+                     alt="Design Foundation Project 1">
+
+                <img src="images/Twisted Magma Poster.jpg"
+                     alt="Design Foundation Project 2">
+
+                <img src="images/Piccolo Markets.jpg"
+                     alt="Design Foundation Project 3">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= Interests & Hobbies ========================== -->
+    <section class="interests-section">
+
+        <h2>Beyond Design</h2>
+
+        <p class="interests-intro">
+            My creativity is influenced by a variety of interests that continue to
+            inspire my work both professionally and personally.
+        </p>
+
+        <div class="interests-grid">
+
+            <!-- Digital Art -->
+            <div class="interest-card reveal-up">
+
+                <img src="images/Super Sonic 2 Digital Art.png" alt="Digital Art">
+                <img src="images/Ash and Pikachu.png" alt="Digital Art">
+
+                <h3>Digital Art</h3>
+
+                <p>
+                    I enjoy creating digital artwork and explore different visual
+                    styles through illustration, colour, and composition. Digital
+                    art allows me to experiment creatively while strengthening my
+                    design fundamentals.
+                </p>
+
+            </div>
+
+            <!-- YouTube -->
+            <div class="interest-card reveal-up">
+
+                <img src="images/Blue Blur_26 - YouTube Banner (2021).jpg" alt="YouTube Design">
+                <img src="images/Super Smash Bros. Ultimate Mario and Wario Montage Thumbnail.jpg" alt="YouTube Design">
+
+
+                <h3>YouTube Design</h3>
+
+                <p>
+                    Through my YouTube channel, I have created thumbnails,
+                    promotional graphics, and branding assets that helped me
+                    develop practical design skills while understanding audience
+                    engagement and digital branding.
+                </p>
+
+            </div>
+
+            <!-- Travel -->
+            <div class="interest-card reveal-up">
+
+               <img src="images/Eindhoven Netherlands.jpg" alt="Travel">
+               <img src="images/Netherlands Selfie.jpg" alt="Travel">
+
+                <h3>Travel</h3>
+
+                <p>
+                    Travelling to the Netherlands in 2023 introduced me to new
+                    cultures, architecture, and design perspectives. Exploring
+                    different environments helps broaden my creative thinking and
+                    inspires fresh ideas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= Footer ========================== -->
+    <footer>
+        <p>
+            &copy; 2026 Yaread Habte | Developed and designed using Visual Studio Code.
+        </p>
+    </footer>
+
+    <!-- ========================= JavaScript ========================== -->
+
+    <!-- Hamburger Toggle -->
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector(".mobile-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+    <!-- Auto Close Mobile Menu on Resize -->
+    <script>
+        window.addEventListener('resize', function () {
+            const menu = document.querySelector('.mobile-menu');
+            const hamburger = document.querySelector('.hamburg');
+
+            if (window.innerWidth > 884 && menu.classList.contains('active')) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
+
+    <!-- Scroll Reveal Animation -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        document
+            .querySelectorAll('.reveal-left, .reveal-right')
+            .forEach(el => observer.observe(el));
+
+         document
+            .querySelectorAll('.reveal-left, .reveal-right, .reveal-up')
+            .forEach(el => observer.observe(el));
+    </script>
+
+    
+
+</body>
+
 </html>
