@@ -2182,32 +2182,47 @@ footer {
         font-size: 1.1rem;
     }
 
-/* ========================= Design Journey Mobile ========================== */
+/* ========================= Design Journey Mobile ========================== 
+
+./* ========================= My Graphic Design Journey Mobile ========================= */
 
 .design-journey {
-    padding: 60px 20px;
+    padding: 60px 45px; /* Match the About section */
 }
 
 .journey-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .journey-text {
     width: 100%;
     text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 .journey-text h2 {
     font-size: 2.3rem;
-    margin-bottom: 20px;
     line-height: 1.2;
+    margin: 0 0 20px 0;
 }
 
 .journey-text p {
     font-size: 20px;
     line-height: 1.8;
+    margin: 0 0 20px 0;
+}
+
+.journey-images img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .journey-images {
