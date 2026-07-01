@@ -1753,30 +1753,33 @@ footer {
     .main-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
-        min-height: auto;
         height: auto;
-        padding-bottom: 50px;
-        gap: 0;
+        min-height: auto;
+        gap: 20px;
+        padding: 20px 0 50px;
     }
 
     .main-container .image {
         width: 80%;
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding-top: 10px;
+        margin-top: 20px;   /* Adds space below the navbar */
+        padding: 0;
     }
 
     .main-container .image img {
+        display: block;
         width: 100%;
         max-width: 600px;
-        padding-top: 20px;
+        margin: 0;
     }
 
     .main-container .content {
         width: 80%;
-        margin: 0 auto;
+        margin: 0;
+        padding: 0;
     }
 
     .main-container .content h1 {
